@@ -5,8 +5,8 @@ Made using the reference:
 
 Install Hadoop locally
 ----------------------
-- mkdir ~/software
-- cd ~/software
+- `mkdir ~/software`
+- `cd ~/software`
 - `curl --remote-name http://apache.claz.org/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz`
 - In your shell runtime configuration file (e.g. ~/.zshrc or ~/.bashrc),
 add this:
