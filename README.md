@@ -9,7 +9,7 @@ Prerequisites
 - Hadoop 1.7.3
     - See install guide below
 - Maven
-    - Assuming you have brew:
+    - Assuming you have Homebrew already installed:
 
             brew install maven
 
