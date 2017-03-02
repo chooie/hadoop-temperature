@@ -11,7 +11,7 @@ Prerequisites
 - Maven
     - Assuming you have brew:
 
-            `brew install maven`
+            brew install maven
 
 Install Hadoop locally on MAC OS X
 ----------------------------------
