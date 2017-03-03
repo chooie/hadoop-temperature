@@ -63,3 +63,4 @@ fabric.properties
 
 ### App
 target/
+output/
