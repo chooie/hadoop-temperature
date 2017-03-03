@@ -22,6 +22,11 @@ public class MaxTemperature {
     FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
     job.setMapperClass(MaxTemperatureMapper.class);
+    // We can use the reducer as a combiner because max() is associative.
+    // Therefore running max on the output of each mapping job will not change
+    // the overall output. It is more efficient because it will mean we just
+    // give one value from each mapper to the reducer.
+    job.setCombinerClass(MaxTemperatureReducer.class);
     job.setReducerClass(MaxTemperatureReducer.class);
 
     job.setOutputKeyClass(Text.class);
